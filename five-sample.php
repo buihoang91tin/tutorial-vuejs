@@ -25,16 +25,16 @@ if(!isset($TPL)){
       </div>
     </div>
     <div class="row">
-		<div class="col-md-12 wrapper-sample">
-			<nav class="sample" v-bind:class="active" v-on:click.prevent>
-				<a href="#" class="sample1" v-on:click=makeActive('sample1')>Inline Editor</a>
-				<a href="#" class="sample2" v-on:click=makeActive('sample2')>Order</a>
-				<a href="#" class="sample3" v-on:click=makeActive('sample3')>Search Instant</a>
-				<a href="#" class="sample4" v-on:click=makeActive('sample4')>Switchable Grid</a>
-			</nav>
-			<div>
-				<component :is="currentView"></component>
-			</div>
-		</div>
+  		<div class="col-md-12 wrapper-sample">
+  			<nav class="sample" v-bind:class="active" v-on:click.prevent>
+  				<a href="#" class="sample1" v-on:click=makeActive('sample1')>Inline Editor</a>
+  				<a href="#" class="sample2" v-on:click=makeActive('sample2')>Order</a>
+  				<a href="#" class="sample3" v-on:click=makeActive('sample3')>Search Instant</a>
+  				<a href="#" class="sample4" v-on:click=makeActive('sample4')>Switchable Grid</a>
+  			</nav>
+  			<div>
+  				<component :is="currentView"></component>
+  			</div>
+  		</div>
   	</div>
   </div>

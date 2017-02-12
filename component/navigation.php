@@ -7,12 +7,7 @@
 	  <ul class="nav navbar-nav navbar-right"> 
 	  	<li><a href="index.php">First app</a></li> 
 	  	<li><a href="five-sample.php" >Five other samples</a></li> 
-	  	<li>
-	  		<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Collections Pencode <b class="caret"></b></a>
-	  		<ul class="dropdown-menu" >
-	  			<li><a href="#" >JSGRID-VUEJS</a></li>
-	  		</ul>
-	  	</li> 
+	  	<li><a href="collections-pencode.php" >Collections Pencode</a></li> 
 	  	<li><a href="#" >Blog</a></li> 
 	  </ul>
 	</div>

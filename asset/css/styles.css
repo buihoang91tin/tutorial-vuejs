@@ -241,8 +241,8 @@ ul{
     text-align: left;
 }
 
-ul li{
-
+ul li a, ul li a:visited{
+	color:#fff;
 }
 
 ul li img{
