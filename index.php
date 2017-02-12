@@ -52,7 +52,7 @@ if(!isset($TPL)){
     <!-- show the events -->
     <div class="col-sm-6">
       <div class="list-group">
-        <a href="#" class="list-group-item" v-for="event in events">
+        <a href="#" class="list-group-item" v-for="(event,$index) in events">
           <h4 class="list-group-item-heading"><i class="glyphicon glyphicon-bullhorn"></i> {{ event.name }}</h4>
           <h5><i class="glyphicon glyphicon-calendar" v-if="event.date"></i> {{ event.date }}</h5>
           <p class="list-group-item-text" v-if="event.detail">{{ event.description }}</p>

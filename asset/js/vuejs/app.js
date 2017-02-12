@@ -57,6 +57,7 @@ var vue = new Vue({
 			if(this.event.name!= ''){
 				//this.events.push(this.event);
 				//this.event = {name: '', description:'', date: ''};
+				console.log(this.event);
 				this.$http.post('backend/index.php', {event:this.event},{
 					   emulateJSON: true
 					}).then(
@@ -69,6 +70,7 @@ var vue = new Vue({
 			}
 		},
 		deleteEvent: function(index){
+			console.log(index);
 			if(confirm('Do you want to delete this event?')){
 				this.events.splice(index, 1);
 			}
