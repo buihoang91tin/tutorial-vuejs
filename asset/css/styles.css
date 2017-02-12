@@ -237,15 +237,12 @@ div.total span{
 
 ul{
     list-style: none;
-    width: 428px;
     margin: 0 auto;
     text-align: left;
 }
 
 ul li{
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-    overflow: hidden;
+
 }
 
 ul li img{
