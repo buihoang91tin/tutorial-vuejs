@@ -1,17 +1,18 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Vue</title>
+<?php 
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="asset/css/styles.css" />
-</head>
-<body>
-	<!-- navigation bar -->
-  <?php include('component/navigation.php'); ?>
+require_once('lib/pageTemplate.php');
 
-  <!-- main body of our application -->
+if(!isset($TPL)){
+  $TPL = new pageTemplate();
+  $TPL->pageTitle="Vue First App";
+  $TPL->contentBody = __FILE__;
+  $TPL->cssFiles[] = 'asset/css/styles.css';
+  $TPL->jsFiles[] = 'asset/js/vuejs/five-sample.js';
+  include "layout/layout.php";
+  exit;
+}
+
+?>
   <div class="container" id="events">
     <div class="row">
       <div class="col-md-12">
@@ -37,10 +38,3 @@
 		</div>
   	</div>
   </div>
-
-  <!-- JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.0/vue-resource.js"></script>
-  <script src="asset/js/vuejs/five-sample.js"></script>
-</body>
-</html>

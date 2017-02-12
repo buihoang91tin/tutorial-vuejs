@@ -6,6 +6,7 @@ if(!isset($TPL)){
   $TPL = new pageTemplate();
   $TPL->pageTitle="Vue First App";
   $TPL->contentBody = __FILE__;
+  $TPL->jsFiles[] = 'asset/js/vuejs/app.js';
   include "layout/layout.php";
   exit;
 }
